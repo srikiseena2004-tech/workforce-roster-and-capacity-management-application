@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: workforce-roster
+    runtime: docker
+    plan: free
+    region: singapore
+    branch: main
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/me
